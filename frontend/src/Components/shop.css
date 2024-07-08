@@ -1,0 +1,23 @@
+.containerShop{
+    display: flex;
+    height: 40vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    flex-wrap: wrap;
+}
+.shop{
+    text-align: center;
+    width: 50%;
+    flex-direction: column; 
+}
+.shop1 h3{
+text-align: center;
+}
+.containerShop .shop .card{
+    height: 30vh;
+}
+.containerShop .shop .card img{
+    height: 200px;
+}
