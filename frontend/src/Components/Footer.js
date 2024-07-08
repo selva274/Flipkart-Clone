@@ -3,9 +3,9 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-    <div className='footer'>
+    <div className="footer">
       
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer class="text-center text-lg-start bg-dark text-white">
 
   <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
    <marquee>
