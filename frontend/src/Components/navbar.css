@@ -1,0 +1,48 @@
+.container{
+    margin: 10px;
+    width: 100vw;
+    margin-left: 30px;
+    height: 6vh;
+    display: flex;
+    gap: 40px;
+    margin-left: 0px;
+    background-color: #FFFFFF;
+}
+.container i{
+    margin: 10px;
+}
+.cart{
+    display: flex;
+    flex-direction: row;
+}
+.container .store{
+    display: flex;
+    flex-direction: row;
+    
+}
+.container .store p{
+ 
+}
+.lbtn{
+    width: 200px;
+}
+button{
+    border: none;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+form{
+    width: 45%;
+    display: flex;
+    border: 1px solid black;
+}
+input{    
+    border: none;
+}
+form input{
+    width: 100%;
+}
+form input:focus{
+    outline: none;
+    border: none;
+}
