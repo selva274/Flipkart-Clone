@@ -1,0 +1,16 @@
+.navigation{
+    height: 30vh;
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+}
+.navigation nav ul {    
+    list-style: none;
+}
+.navigation nav ul{
+    font-size: 40px;
+}
+.navigation nav ul li Link{
+    text-decoration: none;
+}

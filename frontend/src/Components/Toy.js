@@ -1,8 +1,11 @@
 import React from 'react';
 import "./toy.css";
+import Navbar from './Navbar';
+import Footer from './Footer';
 const Electronics = () => {
   return (
     <>
+    <Navbar/>
      <div className="containerE containerT">
      <h3>Toys</h3>
   <div className="products">            
@@ -44,6 +47,7 @@ const Electronics = () => {
 </div>
           </div>
      </div>
+     <Footer/>
      </>
   )
 }
