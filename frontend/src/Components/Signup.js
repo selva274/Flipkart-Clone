@@ -3,13 +3,13 @@ import Footer from '../Components/Footer';
 import './login.css'
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import Signup from './Signup';
-const Login = () => {
+
+const Signup = () => {
   return (
     <>
     <Navbar/>
     <div className="logincontainer">
-    <h2>Login</h2>
+    <h2>Signup</h2>
       <form>
         <label>Email:</label>
         <input type='email' name='email' placeholder='Enter the Email'/><br/>
@@ -18,10 +18,11 @@ const Login = () => {
         <button type='submit'>Submit</button>
        
       </form>
-      <p>New User ?</p><Link to="/signup">SignUp</Link>       </div>
+      <p>Already have Account ?</p><Link to="/login">Login</Link>       
+      </div>
       <Footer/>
     </>
   )
 }
 
-export default Login
+export default Signup

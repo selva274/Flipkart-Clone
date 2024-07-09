@@ -60,9 +60,10 @@ const Navbar = () => {
     <span><i class="bi bi-person-circle"></i></span>Login
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">My Profile</a></li>
-    <li><a class="dropdown-item" href="#">Orders</a></li>
-    <li><a class="dropdown-item" href="#">Wishlist</a></li>
+    <li><a class="dropdown-item" href="..">My Profile</a></li>
+    <li><a class="dropdown-item" href="..">Orders</a></li>
+    <li><a class="dropdown-item" href="..">Wishlist</a></li> 
+    <li><a class="dropdown-item" href="/login">Login</a></li> 
   </ul>
 </div>
     <button><div className="cart">

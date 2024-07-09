@@ -1,0 +1,28 @@
+.logincontainer form{
+    display: flex;
+    padding: 30px;
+    width: 300px;  
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.logincontainer{
+    align-items: center;
+    justify-content: center;
+    display: flex;    
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.logincontainer form input{
+    width: 180px;
+    padding: 10px;
+}
+.logincontainer h2{
+    text-align: center;
+}
+.logincontainer form button{
+    margin-top: 20px;
+    width: 80px;
+    background-color: blue;
+    color: white;
+}
+
