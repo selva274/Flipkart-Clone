@@ -37,7 +37,7 @@ const Footer = () => {
             <i class="fas fa-gem me-3"></i>FlipCartStore
           </h6>
           <p>
-          Amazon Offers an Array Of Unique Products From Thousands Of Brands. Explore Your One-Stop-Shop For All Your Requirements. Shop Online Today!
+          Amazing Offers an Array Of Unique Products From Thousands Of Brands. Explore Your One-Stop-Shop For All Your Requirements. Shop Online Today!
           </p>
         </div>
       
@@ -47,16 +47,16 @@ const Footer = () => {
             Products
           </h6>
           <p>
-            <a href="#!" class="text-reset">Electronics</a>
+            <a href="/electronics" class="text-reset">Electronics</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Fashion & Styles</a>
+            <a href="/shop" class="text-reset">Fashion & Styles</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Study</a>
+            <a href="/shop" class="text-reset">Study</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Toys</a>
+            <a href="/toy" class="text-reset">Toys</a>
           </p>
         </div>
     

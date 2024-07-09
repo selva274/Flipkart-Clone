@@ -1,16 +1,15 @@
-.navigation{
+.navigation ul {
     height: 30vh;
     display: flex;
-   
+   flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 .navigation nav ul {    
     list-style: none;
+    
 }
-.navigation nav ul{
-    font-size: 40px;
-}
-.navigation nav ul li Link{
-    text-decoration: none;
+.navigation nav ul li .card{
+    margin: 20px;
+    margin-left: 50px;
 }
