@@ -1,0 +1,7 @@
+.containerWishlist{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

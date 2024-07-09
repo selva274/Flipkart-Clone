@@ -66,16 +66,19 @@ const Footer = () => {
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            <a href="/seller" class="text-reset">Become a Seller</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
+            <a href="/user" class="text-reset">Profiles</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Orders</a>
+            <a href="/notification" class="text-reset">Notification</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Help</a>
+            <a href="/order" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="https://www.flipkart.com/helpcentre?otracker=${otracker}_footer_navlinks" class="text-reset">Help</a>
           </p>
         </div>
     

@@ -2,7 +2,7 @@ import React from 'react'
 import "./navbar.css";
 import {Link} from "react-router-dom";
 const Navbar = () => {
-  return (    
+   return( 
        <div className="container">
       <Link to="/">
        <svg xmlns="http://www.w3.org/2000/svg" width="159" height="40" viewBox="0 0 159 40" fill="none">
@@ -57,33 +57,35 @@ const Navbar = () => {
       </form>
       <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <span><i class="bi bi-person-circle"></i></span>Login
+    <span><i class="bi bi-person-circle"></i></span>Go
   </button>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="..">My Profile</a></li>
-    <li><a class="dropdown-item" href="..">Orders</a></li>
-    <li><a class="dropdown-item" href="..">Wishlist</a></li> 
+  <ul class="dropdown-menu"> 
+    <li><a class="dropdown-item" href="/user">Profiles</a></li>
+    <li><a class="dropdown-item" href="/user/myprofile">My Profile</a></li>
+    <li><a class="dropdown-item" href="/order">Orders</a></li>
+    <li><a class="dropdown-item" href="/wishlist">Wishlist</a></li> 
     <li><a class="dropdown-item" href="/login">Login</a></li> 
   </ul>
 </div>
-    <button><div className="cart">
-    <i class="bi bi-cart3"></i>
-    <p>Cart</p>
-    </div></button>
-   <button className='lbtn'>
+  <div className="cart">
+  <Link to='/cart'><i class="bi bi-cart3"></i><p>Cart</p></Link>   
+  </div>
+ 
    <div className="store">
-    <i class="bi bi-shop"></i>
-    <p><span>Become a Seller</span></p>
+      <Link to='/seller'>
+      <i class="bi bi-shop"></i>
+      <p><span>Become a Seller</span></p>
+      </Link>
     </div>
-   </button>    
+    
     <div class="dropdown">
     <i class="bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Notification</a></li>  
+    <li><a class="dropdown-item" href="/notification">Notification</a></li>  
   </ul>
 </div>
        </div>
-  )
+   )
 }
 
 export default Navbar
