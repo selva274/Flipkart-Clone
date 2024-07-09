@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./navbar.css";
-import {Link} from "react-router-dom";
-const Navbar = () => {
+import {Link, Navigate} from "react-router-dom";
+const Navbar = ({setSearchValue}) => { 
+  const [searchValue,setSearchValue1]=useState("");
+  const handlesubmit=(event)=>{
+    event.preventDefault(); 
+  }
    return( 
        <div className="container">
       <Link to="/">
@@ -51,9 +55,10 @@ const Navbar = () => {
   </defs>
       </svg>
       </Link>
-      <form action="">
+      <form onSubmit={handlesubmit}>
       <i class="bi bi-search"></i>
-      <input type="text" placeholder='Search for Prducts, Brands and more'/>
+      <input type="text" value={searchValue} onChange={(e)=>{setSearchValue1(e.target.value)}} placeholder='Search for Prducts, Brands and more'/>
+      <input type='submit'/>
       </form>
       <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">

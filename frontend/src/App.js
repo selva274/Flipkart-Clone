@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Electronics from './Components/Electronics';
 import Toy from './Components/Toy';
@@ -13,19 +14,31 @@ import Order from './Order/Order';
 import Wishlist from './Wishlist/Wishlist';
 import Seller from './Seller/Seller';
 import Notification from './Notification/Notification';
+
+
 const App = () => {
+   const[allUsers,setAllUsers]=useState([]); 
+   const[searchValue,setSearchValue]=useState("User");
+useEffect(()=>{ 
+  function fetchdata(){
+    axios.get('http://localhost:3000/users').then((res)=>setAllUsers(res.data)).catch((err)=>console.log(err));
+  }
+  fetchdata();
+},[]);
+   
+  
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/' element={<Main setSearchValue={setSearchValue}/>} />
         <Route path='/electronics' element={<Electronics />} />
         <Route path='/toy' element={<Toy />} />
         <Route path='/Shop' element={<Shop />} />
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/User' element={<User/>}/>
-        <Route path="/user/myprofile" element={<Myprofile/>}/>
+        <Route path='/User' element={<User allUsers={allUsers}/>}/>
+        <Route path="/user/myprofile" element={<Myprofile value={searchValue}/>}/>
         <Route path='/order' element={<Order/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>
         <Route path='/seller' element={<Seller/>}/>

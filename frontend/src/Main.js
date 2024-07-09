@@ -4,10 +4,10 @@ import { Outlet, Link } from "react-router-dom";
 import Add from './Components/Add';
 import './main.css'
 import Footer from './Components/Footer';
-const Main = () => {
+const Main = ({setSearchValue}) => {
   return(
     <>
-    <Navbar/>
+    <Navbar setSearchValue={setSearchValue}/>
     <Add/>
     <div className="navigation">
     <nav>
