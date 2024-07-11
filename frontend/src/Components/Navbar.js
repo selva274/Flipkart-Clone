@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./navbar.css";
-import {Link, Navigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 const Navbar = ({setSearchValue}) => { 
   const [searchValue,setSearchValue1]=useState("");
   const handlesubmit=(event)=>{
@@ -65,11 +65,11 @@ const Navbar = ({setSearchValue}) => {
     <span><i class="bi bi-person-circle"></i></span>Go
   </button>
   <ul class="dropdown-menu"> 
-    <li><a class="dropdown-item" href="/user">Profiles</a></li>
-    <li><a class="dropdown-item" href="/user/myprofile">My Profile</a></li>
-    <li><a class="dropdown-item" href="/order">Orders</a></li>
-    <li><a class="dropdown-item" href="/wishlist">Wishlist</a></li> 
-    <li><a class="dropdown-item" href="/login">Login</a></li> 
+    <li><Link className='dropdown-item' to='/profiles'>Profiles</Link></li>
+    <li><Link className='dropdown-item' to='/user/myprofile'>MyProfile</Link></li>
+    <li><Link className='dropdown-item' to='/order'>Orders</Link></li>
+    <li><Link className='dropdown-item' to='/wishlist'>WishList</Link></li> 
+    <li><Link className='dropdown-item' to='/login'>Login</Link></li> 
   </ul>
 </div>
   <div className="cart">
@@ -86,7 +86,7 @@ const Navbar = ({setSearchValue}) => {
     <div class="dropdown">
     <i class="bi bi-three-dots-vertical" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/notification">Notification</a></li>  
+    <li><Link className='dropdown-item' to='/notification'>Notification</Link></li>  
   </ul>
 </div>
        </div>

@@ -15,13 +15,12 @@ import Wishlist from './Wishlist/Wishlist';
 import Seller from './Seller/Seller';
 import Notification from './Notification/Notification';
 
-
 const App = () => {
    const[allUsers,setAllUsers]=useState([]); 
    const[searchValue,setSearchValue]=useState("User");
 useEffect(()=>{ 
   function fetchdata(){
-    axios.get('http://localhost:3000/users').then((res)=>setAllUsers(res.data)).catch((err)=>console.log(err));
+    axios.get('http://localhost:3001/users').then((res)=>setAllUsers(res.data)).catch((err)=>console.log(err));
   }
   fetchdata();
 },[]);
@@ -37,7 +36,7 @@ useEffect(()=>{
         <Route path='/login' element={<Login/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/User' element={<User allUsers={allUsers}/>}/>
+        <Route path='/profiles' element={<User allUsers={allUsers}/>}/>
         <Route path="/user/myprofile" element={<Myprofile value={searchValue}/>}/>
         <Route path='/order' element={<Order/>}/>
         <Route path='/wishlist' element={<Wishlist/>}/>

@@ -3,7 +3,6 @@ import Footer from '../Components/Footer';
 import './login.css'
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
-import Signup from './Signup';
 const Login = () => {
   return (
     <>
@@ -15,8 +14,7 @@ const Login = () => {
         <input type='email' name='email' placeholder='Enter the Email'/><br/>
         <label>Password:</label>
         <input type='password' name='password' placeholder='Enter the Password'/>
-        <button type='submit'>Submit</button>
-       
+        <button type='submit'>Submit</button>       
       </form>
       <p>New User ?</p><Link to="/signup">SignUp</Link>       </div>
       <Footer/>
